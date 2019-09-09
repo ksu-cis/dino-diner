@@ -55,7 +55,7 @@ namespace MenuTest.Entrees
             {
                 if (ingredient.Equals("Chicken Nugget")) nuggetCount++;
             }
-            Assert.Equal(7, nuggetCount);
+            Assert.Equal(8, nuggetCount);
             Assert.Equal<int>(8, dn.Ingredients.Count);
 
         }
