@@ -1,0 +1,70 @@
+---
+uti: com.xamarin.workbook
+id: 14dcd7b3-c0db-4702-871d-c8b431da2a8e
+title: 1-add-entree-classes
+platforms:
+- WPF
+packages:
+- id: xunit
+  version: 2.4.1
+---
+
+# Menu Milestone 1
+
+## Add Entree Classes (100 points possible)
+
+DinoDiner currently offers seven entrees:
+
+* Brontowurst (Brautwurst with peppers and onions in a bun)
+
+* DinoNuggets (Six crispy fried breaded chicken nuggets)
+
+* Prehistoric PB&J (A peanut butter & jelly sandwich)
+
+* Pterodactyl Wings (Chicken wings glazed with a signature hot sauce)
+
+* Steakosaurus Burger (A 1/2 pound steakburger)
+
+* T-Rex King Burger (A triple 1/2 steakburger with all the fixings)
+
+* Veloci-Wrap (A chicken ceasar wrap)
+
+For each of these entrees, you will need to create a corresponding C# class (an implementation for Prehistoric PB & J is provided).
+
+### General Requirements
+
+You will need to follow the provided style guide.
+
+Each entree should be declared in the **DinoDiner.Menu.Entree** namepace.
+
+Each entree should implement a property for: Price (a double), Calories (a uint), and Ingredients (a List<string>).  The list of ingredients depends on the class, and can be modified as described under each class heading.
+
+Your code should pass all the tests  provided in the MenuTest project, and be documented using Visual Studio XML (as specified in the style guide).
+
+### Brontowurst (15 points possible)
+
+Implement a class to represent the Brontowurst entree.  Its price is **$5.36**, it contains **498 calories**, and its ingredients are: **brautwurst, whole-wheat bun, peppers**, and **onions.**  It should implement methods for holding the **bun, peppers**, and **onions.**
+
+### Dino Nuggets (20 points possible)
+
+Implement a class to represent the Dino Nuggest entree.  Its price is **$4.25**, it contains **59 calories** per nugget, and its ingredients are: **6** **chicken nuggets**.  It should implement methods for adding a nugget at an additional **$0.25**.
+
+### Pterodactyl Wings (15 points possible)
+
+Implement a class to represent the Pterodactyl Wings entree.  Its price is **$7.21**, it contains **318 calories**, and its ingredients are:  **Chicken** and **Wing Sauce**.
+
+### Steakosaurus Burger (15 points possible)
+
+Implement a class to represent the Steakosaurus Burger entree.  Its price is **$5.15**, it contains **621 calories**, and its ingredients are: **whole wheat bun, steakburger pattie, pickle, ketchup**, and **mustard.**  It should implement methods for holding the **bun, pickle, ketchup,** and **mustard**.
+
+### T-Rex King Burger (20 points possible)
+
+Implement a class to represent the T-Rex King Burger entree.  Its price is **$8.45**, it contains **728 calories**, and its ingredients are: a **whole wheat bun, three steakburger patties, lettuce, tomato, onion, pickle, ketchup, mustard**, and **mayo**.  It should implement methods for holding the **bun, lettuce, tomato, onion, pickle, ketchup, mustard**, and **mayo.**
+
+### Veloci-Wrap (15 points possible)
+
+Implement a class to represent the Veloci-Wrap entree.  Its price is **$6.86**, it contains **356 calories**, and its ingredients are: a **flour tortilla, chicken breast, romaine lettuce, Ceasar dressing**, and **parmesan cheese**.  It should implement methods to hold the **dressing, lettuce**, and **cheese.**
+
+### Prehistoric PB & J
+
+The impelmentation of the prehistoric PB & J is provided as an example.  Its price is **$6.52**, it contains **483 calories**, and its ingredients are: **bread, peanut butter**, and **jelly**.  It implements methods to hold the **peanut butter** and **jelly**.
