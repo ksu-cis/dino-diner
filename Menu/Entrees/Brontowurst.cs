@@ -4,14 +4,14 @@ using System.Text;
 
 namespace DinoDiner.Menu.Entrees
 {
-    class Brontowurst
+    public class Brontowurst
     {
         private bool bun = true;
         private bool peppers = true;
         private bool onions = true;
 
-        public double price { get; set; }
-        public uint calories { get; set; }
+        public double Price { get; set; }
+        public uint Calories { get; set; }
 
         public List<string> Ingredients
         {
@@ -36,8 +36,8 @@ namespace DinoDiner.Menu.Entrees
 
         public Brontowurst()
         {
-            this.price = 5.36;
-            this.calories = 498;
+            this.Price = 5.36;
+            this.Calories = 498;
         }
 
         public void HoldBun()
