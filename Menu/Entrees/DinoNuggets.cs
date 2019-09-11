@@ -13,6 +13,8 @@ namespace DinoDiner.Menu.Entrees
             price = 4.25;
             calories = 45;
             count = 6;
+            add_price = 0.25;
+            base_count = count;
         }
 
         public void AddNugget()

@@ -6,13 +6,17 @@ namespace DinoDiner.Menu.AbstractClasses
 {
     public abstract class Entree
     {
+        protected double add_price = 0.00;
+
         protected double price;
 
         public double Price
         {
-            get { return price; }
+            get { return price + count * add_price; }
         }
         protected uint count;
+
+        protected uint base_count;
 
         protected uint calories;
 
