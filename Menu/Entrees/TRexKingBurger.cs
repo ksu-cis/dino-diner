@@ -5,7 +5,7 @@ using DinoDiner.Menu.AbstractClasses;
 
 namespace DinoDiner.Menu.Entrees
 {
-    class TRexKingBurger : Entree
+    public class TRexKingBurger : Entree
     {
         public TRexKingBurger()
         {

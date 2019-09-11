@@ -5,9 +5,9 @@ using DinoDiner.Menu.AbstractClasses;
 
 namespace DinoDiner.Menu.Entrees
 {
-    class Steakosaurusburger : Entree
+    public class SteakosaurusBurger : Entree
     {
-        public Steakosaurusburger()
+        public SteakosaurusBurger()
         {
             ingredients = new List<string>() { "Whole Wheat Bun", "Steakburger Patty", "Pickle", "Ketchup", "Mustard" };
             price = 5.15;
