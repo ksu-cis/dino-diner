@@ -7,7 +7,7 @@ namespace DinoDiner.Menu.Entrees
     /// <summary>
     /// Manages the Dino Nuggets entree.
     /// </summary>
-    class DinoNuggets
+    public class DinoNuggets
     {
         private uint _nuggetNumber;
         public double Price { get; set; }
