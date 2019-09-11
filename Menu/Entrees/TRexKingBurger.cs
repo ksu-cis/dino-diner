@@ -42,7 +42,7 @@ namespace DinoDiner.Menu.Entrees
                 }
                 if (pickle)
                 {
-                    ingredients.Add("Pickles");
+                    ingredients.Add("Pickle");
                 }
                 if (ketchup)
                 {

@@ -20,7 +20,7 @@ namespace DinoDiner.Menu.Entrees
                 List<string> ingredients = new List<string> { "Flour Tortilla", "Chicken Breast"};
                 if (dressing)
                 {
-                    ingredients.Add("Caesar Dressing");
+                    ingredients.Add("Ceasar Dressing");
                 }
                 if (lettuce)
                 {
@@ -37,18 +37,18 @@ namespace DinoDiner.Menu.Entrees
         public VelociWrap()
         {
             this.Price = 6.86;
-            this.Calories = 728;
+            this.Calories = 356;
         }
 
         public void HoldDressing()
         {
             this.dressing = false;
         }
-        public void Holdlettuce()
+        public void HoldLettuce()
         {
             this.lettuce = false;
         }
-        public void HoldCheese()
+        public void holdCheese()
         {
             this.cheese = false;
         }
