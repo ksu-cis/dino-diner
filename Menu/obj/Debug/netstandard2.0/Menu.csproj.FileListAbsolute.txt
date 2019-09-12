@@ -1,0 +1,9 @@
+U:\dino-diner\Menu\bin\Debug\netstandard2.0\Menu.deps.json
+U:\dino-diner\Menu\bin\Debug\netstandard2.0\Menu.dll
+U:\dino-diner\Menu\bin\Debug\netstandard2.0\Menu.pdb
+U:\dino-diner\Menu\obj\Debug\netstandard2.0\Menu.csprojAssemblyReference.cache
+U:\dino-diner\Menu\obj\Debug\netstandard2.0\Menu.csproj.CoreCompileInputs.cache
+U:\dino-diner\Menu\obj\Debug\netstandard2.0\Menu.AssemblyInfoInputs.cache
+U:\dino-diner\Menu\obj\Debug\netstandard2.0\Menu.AssemblyInfo.cs
+U:\dino-diner\Menu\obj\Debug\netstandard2.0\Menu.dll
+U:\dino-diner\Menu\obj\Debug\netstandard2.0\Menu.pdb
