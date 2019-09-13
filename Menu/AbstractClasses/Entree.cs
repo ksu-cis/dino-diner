@@ -12,7 +12,7 @@ namespace DinoDiner.Menu.AbstractClasses
 
         public double Price
         {
-            get { return price + count * add_price; }
+            get { return price + ( count - base_count ) * add_price; }
         }
         protected uint count;
 

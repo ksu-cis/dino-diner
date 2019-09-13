@@ -9,7 +9,7 @@ namespace DinoDiner.Menu.Entrees
     {
         public SteakosaurusBurger()
         {
-            ingredients = new List<string>() { "Whole Wheat Bun", "Steakburger Patty", "Pickle", "Ketchup", "Mustard" };
+            ingredients = new List<string>() { "Whole Wheat Bun", "Steakburger Pattie", "Pickle", "Ketchup", "Mustard" };
             price = 5.15;
             calories = 621;
             count = 1;
