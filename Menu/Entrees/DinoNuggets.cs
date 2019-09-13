@@ -19,6 +19,7 @@ namespace DinoDiner.Menu.Entrees
 
         public void AddNugget()
         {
+            ingredients.Add( "Chicken Nugget" );
             count += 1;
         }
     }
