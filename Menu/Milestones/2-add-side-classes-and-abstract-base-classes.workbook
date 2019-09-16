@@ -20,7 +20,7 @@ DinoDiner currently offers four sides:
 
 * Triceritots (Tater Tots)
 
-For each of these sides, you will need to create a corresponding C# class that inherits from the Entree abstract base class (provided).
+For each of these sides, you will need to create a corresponding C# class that inherits from the Side abstract base class (provided).
 
 In addition, you will need to create an abstract base class for Entrees, and refactor your existing entrees to use it.
 
