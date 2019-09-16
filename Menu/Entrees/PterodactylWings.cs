@@ -7,6 +7,9 @@ namespace DinoDiner.Menu.Entrees
 {
     public class PterodactylWings : Entree
     {
+        /// <summary>
+        /// Creates a new PterodactylWings instance.
+        /// </summary>
         public PterodactylWings()
         {
             ingredients = new List<string>() { "Chicken", "Wing Sauce" };

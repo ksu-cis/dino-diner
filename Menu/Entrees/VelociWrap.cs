@@ -7,6 +7,9 @@ namespace DinoDiner.Menu.Entrees
 {
     public class VelociWrap : Entree
     {
+        /// <summary>
+        /// Creates a new VelociWrap Instance.
+        /// </summary>
         public VelociWrap()
         {
             ingredients = new List<string>() { "Flour Tortilla", "Chicken Breast", "Romaine Lettuce", "Ceasar Dressing", "Parmesan Cheese" };
@@ -14,6 +17,10 @@ namespace DinoDiner.Menu.Entrees
             calories = 356;
             count = 1;
         }
+
+        /// <summary>
+        /// Removes the dressing 
+        /// </summary>
         public void HoldDressing()
         {
             ingredients.Remove("Ceasar Dressing");

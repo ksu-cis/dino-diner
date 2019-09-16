@@ -7,6 +7,9 @@ namespace DinoDiner.Menu.Entrees
 {
     public class DinoNuggets : Entree
     {
+        /// <summary>
+        /// Creates a DinoNugget object. Price: $4.25, Calories per Nugget: 59, Count: 6
+        /// </summary>
         public DinoNuggets()
         {
             ingredients = new List<string>() { "Chicken Nugget", "Chicken Nugget", "Chicken Nugget", "Chicken Nugget", "Chicken Nugget", "Chicken Nugget" };
@@ -17,6 +20,9 @@ namespace DinoDiner.Menu.Entrees
             base_count = count;
         }
 
+        /// <summary>
+        /// Adds a new nugget.
+        /// </summary>
         public void AddNugget()
         {
             ingredients.Add( "Chicken Nugget" );
