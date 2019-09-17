@@ -57,7 +57,7 @@ namespace MenuTest.Sides
         {
             MezzorellaSticks ms = new MezzorellaSticks();
             ms.Size = Size.Medium;
-            Assert.Equal<Size>(Size.Medium, Size.Medium);
+            Assert.Equal<Size>(Size.Medium, ms.Size);
         }
 
         [Fact]
@@ -81,7 +81,7 @@ namespace MenuTest.Sides
         {
             MezzorellaSticks ms = new MezzorellaSticks();
             ms.Size = Size.Large;
-            Assert.Equal<Size>(Size.Large, Size.Large);
+            Assert.Equal<Size>(Size.Large, ms.Size);
         }
     }
 }

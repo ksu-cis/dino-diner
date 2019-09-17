@@ -57,7 +57,7 @@ namespace MenuTest.Sides
         {
             Triceritots tt = new Triceritots();
             tt.Size = Size.Medium;
-            Assert.Equal<Size>(Size.Medium, Size.Medium);
+            Assert.Equal<Size>(Size.Medium, tt.Size);
         }
 
         [Fact]
@@ -81,7 +81,7 @@ namespace MenuTest.Sides
         {
             Triceritots tt = new Triceritots();
             tt.Size = Size.Large;
-            Assert.Equal<Size>(Size.Large, Size.Large);
+            Assert.Equal<Size>(Size.Large, tt.Size);
         }
     }
 }

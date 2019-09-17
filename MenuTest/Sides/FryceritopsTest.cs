@@ -57,7 +57,7 @@ namespace MenuTest.Sides
         {
             Fryceritops ft = new Fryceritops();
             ft.Size = Size.Medium;
-            Assert.Equal<Size>(Size.Medium, Size.Medium);
+            Assert.Equal<Size>(Size.Medium, ft.Size);
         }
 
         [Fact]
@@ -81,7 +81,7 @@ namespace MenuTest.Sides
         {
             Fryceritops ft = new Fryceritops();
             ft.Size = Size.Large;
-            Assert.Equal<Size>(Size.Large, Size.Large);
+            Assert.Equal<Size>(Size.Large, ft.Size);
         }
     }
 }
