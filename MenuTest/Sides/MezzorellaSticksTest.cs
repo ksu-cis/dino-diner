@@ -25,7 +25,7 @@ namespace MenuTest.Sides
             MezzorellaSticks ms = new MezzorellaSticks();
             Assert.Contains<string>("Breading", ms.Ingredients);
             Assert.Contains<string>("Cheese Product", ms.Ingredients);
-            Assert.Contains<string>("Vegtable Oil", ms.Ingredients);
+            Assert.Contains<string>("Vegetable Oil", ms.Ingredients);
             Assert.Equal<int>(3, ms.Ingredients.Count);
         }
 
