@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "U:\\dino-diner\\MenuTest\\MenuTest.csproj": {}
+    "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj": {}
   },
   "projects": {
-    "U:\\dino-diner\\MenuTest\\MenuTest.csproj": {
+    "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "U:\\dino-diner\\MenuTest\\MenuTest.csproj",
+        "projectUniqueName": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj",
         "projectName": "MenuTest",
-        "projectPath": "U:\\dino-diner\\MenuTest\\MenuTest.csproj",
+        "projectPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj",
         "packagesPath": "C:\\Users\\creightong\\.nuget\\packages\\",
-        "outputPath": "U:\\dino-diner\\MenuTest\\obj\\",
+        "outputPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "U:\\dino-diner\\Menu\\Menu.csproj": {
-                "projectPath": "U:\\dino-diner\\Menu\\Menu.csproj"
+              "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {
+                "projectPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "U:\\dino-diner\\Menu\\Menu.csproj": {
+    "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "U:\\dino-diner\\Menu\\Menu.csproj",
+        "projectUniqueName": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
         "projectName": "Menu",
-        "projectPath": "U:\\dino-diner\\Menu\\Menu.csproj",
+        "projectPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
         "packagesPath": "C:\\Users\\creightong\\.nuget\\packages\\",
-        "outputPath": "U:\\dino-diner\\Menu\\obj\\",
+        "outputPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
