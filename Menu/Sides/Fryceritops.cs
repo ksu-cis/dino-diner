@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Menu.Sides
+namespace DinoDiner.Menu.Sides
 {
-    class Fryceritops
+    public class Fryceritops : Side
     {
+        public Fryceritops() {
+            this.Price = 0.99;
+            this.Calories = 322;
+        }
+
+        public override List<string> Ingredients { get { return new List<string>() { "Potato", "Salt", "Vegetable Oil" }; } }
     }
 }
