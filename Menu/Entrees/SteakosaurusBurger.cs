@@ -4,73 +4,107 @@ using System.Text;
 
 namespace DinoDiner.Menu.Entrees
 {
-    public class SteakosaurusBurger
+    public class SteakosaurusBurger : Entree
     {
-        private bool bun = true;
-        private bool pickle = true;
-        private bool ketchup = true;
-        private bool mustard = true;
-        private bool lettuce = true;
-        private bool tomato = true;
-        private bool onion = true;
-
-        public bool getBun { get { return bun; } }
-        public bool getPickle { get { return pickle; } }
-        public bool getKetchup { get { return ketchup; } }
-        public bool getMustard { get { return mustard; } }
-        public bool getLettuce { get { return lettuce; } }
-        public bool getTomato { get { return tomato; } }
-        public bool getOnion { get { return onion; } }
-
-        public double Price { get; set; }
-        public uint Calories { get; set; }
-
-        public List<string> Ingredients
+        /// <summary>
+        /// Accessor used to control buns in the meal
+        /// </summary>
+        public bool getBun { get;  set; } = true;
+        /// <summary>
+        /// Accessor used to control pickles in the meal
+        /// </summary>
+        public bool getPickle { get; set; } = true;
+        /// <summary>
+        /// Accessor used to control ketchup in the meal
+        /// </summary>
+        public bool getKetchup { get; set; } = true;
+        /// <summary>
+        /// Accessor used to control mustard in the meal
+        /// </summary>
+        public bool getMustard { get; set; } = true;
+        /// <summary>
+        /// Accessor used to control lettuce in the meal
+        /// </summary>
+        public bool getLettuce { get; set; } = true;
+        /// <summary>
+        /// Accessor used to control tomato in the meal
+        /// </summary>
+        public bool getTomato { get; set; } = true;
+        /// <summary>
+        /// Accessor used to control onion in the meal
+        /// </summary>
+        public bool getOnion { get; set; } = true;
+        /// <summary>
+        /// Generates a list of the ingredients in a SteakosaurusBurger meal
+        /// </summary>
+        public override List<string> Ingredients
         {
             get
             {
                 List<string> ingredients = new List<string>() { "Steakburger Pattie" };
-                if (bun) ingredients.Add("Whole Wheat Bun");
-                if (pickle) ingredients.Add("Pickle");
-                if (ketchup) ingredients.Add("Ketchup");
-                if (mustard) ingredients.Add("Mustard");
+                if (getBun) ingredients.Add("Whole Wheat Bun");
+                if (getPickle) ingredients.Add("Pickle");
+                if (getKetchup) ingredients.Add("Ketchup");
+                if (getMustard) ingredients.Add("Mustard");
                 return ingredients;
             }
         }
-
+        /// <summary>
+        /// Constructor used to create a default instance of a SteakosaurusBurger
+        /// </summary>
         public SteakosaurusBurger()
         {
-            this.Price = 5.15;
-            this.Calories = 621;
+            Price = 5.15;
+            Calories = 621;
         }
-
+        /// <summary>
+        /// Method used to remove a bun from the meal
+        /// </summary>
         public void HoldBun()
         {
-            bun = false;
+            getBun = false;
         }
+        /// <summary>
+        /// Method used to remove pickles from the meal
+        /// </summary>
         public void HoldPickle()
         {
-            pickle = false;
+            getPickle = false;
         }
+        /// <summary>
+        /// Method used to remove ketchup from the meal
+        /// </summary>
         public void HoldKetchup()
         {
-            ketchup = false;
+            getKetchup = false;
         }
+        /// <summary>
+        /// Method used to remove mustard from the meal
+        /// </summary>
         public void HoldMustard()
         {
-            mustard = false;
+            getMustard = false;
         }
+        /// <summary>
+        /// Method used to remove lettuce from the meal
+        /// </summary>
         public void HoldLettuce()
         {
-            lettuce = false;
+            getLettuce = false;
         }
+        /// <summary>
+        /// Method used to remove onions from the meal
+        /// </summary>
         public void HoldOnion()
         {
-            onion = false;
+            getOnion = false;
         }
+        /// <summary>
+        /// Method used to remove tomatoes from the meal
+        /// </summary>
         public void HoldTomato()
         {
-            tomato = false;
+            getTomato = false;
         }
 
     }

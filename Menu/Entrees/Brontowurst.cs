@@ -4,45 +4,56 @@ using System.Text;
 
 namespace DinoDiner.Menu.Entrees
 {
-    public class Brontowurst
+    public class Brontowurst : Entree
     {
-        private bool bun = true;
-        private bool peppers = true;
-        private bool onions = true;
-
-        public double Price { get; set; }
-        public uint Calories { get; set; }
-
-        public List<string> Ingredients
+        /// <summary>
+        /// Private variables used to determine the ingredients to add into the meal
+        /// </summary>
+        private bool _bun = true;
+        private bool _peppers = true;
+        private bool _onions = true;
+        /// <summary>
+        /// Generates a list of the ingredients in a Brontowurst meal
+        /// </summary>
+        public override List<string> Ingredients
         {
             get
             {
                 List<string> ingredients = new List<string>() { "Brautwurst" };
-                if (bun) ingredients.Add("Whole Wheat Bun");
-                if (peppers) ingredients.Add("Peppers");
-                if (onions) ingredients.Add("Onion");
+                if (_bun) ingredients.Add("Whole Wheat Bun");
+                if (_peppers) ingredients.Add("Peppers");
+                if (_onions) ingredients.Add("Onion");
                 return ingredients;
             }
         }
-
+        /// <summary>
+        /// Constructor used to create a default instance of Brontowurst
+        /// </summary>
         public Brontowurst()
         {
-            this.Price = 5.36;
-            this.Calories = 498;
+            Price = 5.36;
+            Calories = 498;
         }
-
+        /// <summary>
+        /// Method used to remove bun in the meal
+        /// </summary>
         public void HoldBun()
         {
-            this.bun = false;
+            _bun = false;
         }
-
+        /// <summary>
+        /// Method used to remove peppers in the meal
+        /// </summary>
         public void HoldPeppers()
         {
-            this.peppers = false;
+            _peppers = false;
         }
+        /// <summary>
+        /// Method used to remove onion from the meal
+        /// </summary>
         public void HoldOnion()
         {
-            this.onions = false;
+            _onions = false;
         }
 
     }

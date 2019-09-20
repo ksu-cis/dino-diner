@@ -4,36 +4,43 @@ using System.Text;
 
 namespace DinoDiner.Menu.Entrees
 {
-    public class DinoNuggets
+    public class DinoNuggets : Entree
     {
+        /// <summary>
+        /// Stores the number of additional chicken nuggets added to the value meal
+        /// </summary>
         private uint chickenNugget;
-        public uint ChickenNugget { get { return chickenNugget; } private set { chickenNugget = value; } }
-        public double Price { get { return 4.25 + ((ChickenNugget - 6) * .25); } }
-        public uint Calories { get { return 59 * ChickenNugget; } }
-
-        public List<string> Ingredients
+        /// <summary>
+        /// Generates a list of the ingredients in a DinoNuggets meal
+        /// </summary>
+        public override List<string> Ingredients
         {
             get
             {
-                List<string> ingredients = new List<string>();
-                for (int i = 0; i < ChickenNugget; i++)
+                List<string> ingredients = new List<string> { "Chicken Nugget", "Chicken Nugget", "Chicken Nugget", "Chicken Nugget", "Chicken Nugget", "Chicken Nugget" };
+                for (int i = 0; i < chickenNugget; i++)
                 {
                     ingredients.Add("Chicken Nugget");
                 }
-
                 return ingredients;
             }
         }
-
-
+        /// <summary>
+        /// Constructor that takes in no parameters and sets default Price and Calories
+        /// </summary>
         public DinoNuggets()
         {
-            chickenNugget = 6;
+            Price = 4.25;
+            Calories = 6 * 59;
         }
-
+        /// <summary>
+        /// Adds an additional nugget to the value meal and updates the Price and Calories
+        /// </summary>
         public void AddNugget()
         {
-            ChickenNugget++;
+            chickenNugget++;
+            Price = 4.25 + (chickenNugget * 0.25);
+            Calories = (6 * 59) + (chickenNugget * 59);
         }
     }
 }

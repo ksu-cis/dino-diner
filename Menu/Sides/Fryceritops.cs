@@ -6,14 +6,21 @@ namespace DinoDiner.Menu.Sides
 {
     public class Fryceritops : Side
     {
+        /// <summary>
+        /// Creates a new instance of MeteorMacAndCheese as a small side
+        /// </summary>
         public Fryceritops()
         {
-            this.Price = 0.99;
-            this.Calories = 322;
+            Size = Size.Small;
         }
-
+        /// <summary>
+        /// Generates a list of the ingredients in a MMC
+        /// </summary>
         public override List<string> Ingredients { get { return new List<string>() { "Potato", "Salt", "Vegetable Oil" }; } }
         protected Size size;
+        /// <summary>
+        /// Sets the size of the selected side and updates the Calories and Price accordingly
+        /// </summary>
         public override Size Size
         {
             set
@@ -22,13 +29,16 @@ namespace DinoDiner.Menu.Sides
                 switch (size)
                 {
                     case Size.Large:
-                        this.Price = 1.95;
+                        Calories = 480;
+                        Price = 1.95;
                         break;
                     case Size.Medium:
-                        this.Price = 1.95;
+                        Calories = 365;
+                        Price = 1.45;
                         break;
                     case Size.Small:
-                        this.Price = 1.95;
+                        Calories = 222;
+                        Price = 0.99;
                         break;
                 }
             }

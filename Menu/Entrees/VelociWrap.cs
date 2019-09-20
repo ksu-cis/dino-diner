@@ -4,18 +4,18 @@ using System.Text;
 
 namespace DinoDiner.Menu.Entrees
 {
-    public class VelociWrap
+    public class VelociWrap : Entree
     {
-
+        /// <summary>
+        /// Variable to manage the occurances of ingredients in a meal
+        /// </summary>
         private bool _dressing = true;
         private bool _lettuce = true;
         private bool _cheese = true;
-
-        public double Price { get; set; }
-        public uint Calories { get; set; }
-
-
-        public List<string> Ingredients
+        /// <summary>
+        /// Generates a list of the ingredients in a VelociWrap meal
+        /// </summary>
+        public override List<string> Ingredients
         {
             get
             {
@@ -27,21 +27,31 @@ namespace DinoDiner.Menu.Entrees
                 return ingredients;
             }
         }
-
+        /// <summary>
+        /// Constructor used to create a default instance of a VelociWrap
+        /// </summary>
         public VelociWrap()
         {
-            this.Price = 6.86;
-            this.Calories = 356;
+            Price = 6.86;
+            Calories = 356;
         }
-
+        /// <summary>
+        /// Method used to remove dressing from the meal
+        /// </summary>
         public void HoldDressing()
         {
             _dressing = false;
         }
+        /// <summary>
+        /// Method used to remove lettuce from the meal
+        /// </summary>
         public void HoldLettuce()
         {
             _lettuce = false;
         }
+        /// <summary>
+        /// Method used to remove cheese from the meal
+        /// </summary>
         public void HoldCheese()
         {
             _cheese = false;
