@@ -12,27 +12,58 @@ namespace DinoDiner.Menu.Sides
         Large
     }
 
+
     public abstract class Side
     {
-        /// <summary>
-        /// Gets and sets the price
-        /// </summary>
-        public double Price { get; set; }
+        readonly double[] prices =
+        {
+            .99,
+            1.45,
+            1.95
+        };
+
 
         /// <summary>
-        /// Gets and sets the calories
+        /// The price of the current entree. Includes the additional items.
         /// </summary>
-        public uint Calories { get; set; }
+        public double Price
+        {
+            get { return prices[ (int)Size ]; }
+        }
 
         /// <summary>
-        /// Gets the ingredients list
+        /// Current count of the items. This should be the updated count.
         /// </summary>
-        public List<string> Ingredients { get; }
+        public Size Size;
+
+        
+        /// <summary>
+        /// The amount of calories in one. For example, with nuggets, it should be the 
+        /// calories for one nugget.
+        /// </summary>
+        protected List<uint> calories;
 
         /// <summary>
-        /// Gets or sets the size
+        /// The total calories within the item. This is not representative of the calories 
+        /// after removing ingrients. It is updated to show additional items.
         /// </summary>
-        public Size Size { get; set; }
+        public uint Calories
+        {
+            get { return (calories[ (int)Size ] ); }
+        }
+
+        /// <summary>
+        /// List of ingriendents.
+        /// </summary>
+        protected List<string> ingredients;
+
+        /// <summary>
+        /// Returns a copy of the ingredients list.
+        /// </summary>
+        public List<string> Ingredients
+        {
+            get { return new List<string>(ingredients); }
+        }
 
     }
 }
