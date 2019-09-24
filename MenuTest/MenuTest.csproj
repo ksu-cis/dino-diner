@@ -14,9 +14,6 @@
     <Compile Remove="Entrees\SteakosaurusBurgerTest.cs" />
     <Compile Remove="Entrees\TRexKingBurgerTest.cs" />
     <Compile Remove="Entrees\VelociWrapTest.cs" />
-    <Compile Remove="Sides\FryceritopsTest.cs" />
-    <Compile Remove="Sides\MeteorMacAndCheeseTest.cs" />
-    <Compile Remove="Sides\MezzorellaSticksTest.cs" />
   </ItemGroup>
 
   <ItemGroup>
