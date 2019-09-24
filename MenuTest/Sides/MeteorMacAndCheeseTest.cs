@@ -25,7 +25,7 @@ namespace MenuTest.Sides
             MeteorMacAndCheese mmc = new MeteorMacAndCheese();
             Assert.Contains<string>("Macaroni Noodles", mmc.Ingredients);
             Assert.Contains<string>("Cheese Product", mmc.Ingredients);
-            Assert.Contains<string>("Pork Sausuage", mmc.Ingredients);
+            Assert.Contains<string>("Pork Sausage", mmc.Ingredients);
             Assert.Equal<int>(3, mmc.Ingredients.Count);
         }
 
