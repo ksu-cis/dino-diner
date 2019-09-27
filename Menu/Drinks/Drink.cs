@@ -4,13 +4,8 @@ using System.Text;
 
 namespace DinoDiner.Menu.Drinks
 {
-    public enum Size
-    {
-        Small,
-        Medium,
-        Large
-    }
-    public abstract class Drink
+   
+    public abstract class Drink : ItemSize
     {
         /// <summary>
         /// Gets and sets the price
@@ -19,23 +14,21 @@ namespace DinoDiner.Menu.Drinks
         /// <summary>
         /// Removes or adds ice
         /// </summary>
-        public bool Ice { get; set; }
+        public bool Ice { get; set; } = true;
         /// <summary>
         /// Gets and sets the calories
         /// </summary>
         public uint Calories { get; set; }
         /// <summary>
-        /// Gets the ingredients list
+        /// Returns the ingredients that comprise the beverage
         /// </summary>
         public abstract List<string> Ingredients { get; }
-        /// <summary>
-        /// Sets the size of the selected side and updates the Calories and Price accordingly
-        /// </summary>
-        public abstract Size Size { get; set; }
+        
         /// <summary>
         /// Removes Ice from the drink
         /// </summary>
         public void HoldIce() { Ice = false; }
-        
+
+        public abstract Size Size { get; set; }
     }
 }

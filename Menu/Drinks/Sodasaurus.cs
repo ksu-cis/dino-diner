@@ -15,14 +15,14 @@ namespace DinoDiner.Menu.Drinks
     public class Sodasaurus : Drink
     {
         /// <summary>
-        /// Returns the ingredients of the 
+        /// Returns the ingredients that comprise the beverage
         /// </summary>
         public override List<string> Ingredients { get { return new List<string>() { "Water", "Natural Flavors", "Cane Sugar" }; } }
         /// <summary>
         /// Gets and Set the natural flavour of the drink
         /// </summary>
         public SodasaurusFlavor Flavor { get; set; } = SodasaurusFlavor.Cola;
-        protected Size size = Size.Small;
+        protected Size _size = Size.Small;
         /// <summary>
         /// Sets the size of the selected side and updates the Calories and Price accordingly
         /// </summary>
@@ -30,8 +30,8 @@ namespace DinoDiner.Menu.Drinks
         {
             set
             {
-                size = value;
-                switch (size)
+                Size = value;
+                switch (Size)
                 {
                     case Size.Large:
                         Calories = 208;
@@ -47,9 +47,7 @@ namespace DinoDiner.Menu.Drinks
                         break;
                 }
             }
-            get { return size; }
+            get { return Size; }
         }
-
-
     }
 }

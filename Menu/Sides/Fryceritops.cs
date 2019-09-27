@@ -11,7 +11,7 @@ namespace DinoDiner.Menu.Sides
         /// </summary>
         public Fryceritops()
         {
-            Size = Size.Small;
+            Size = this.Size.Small;
         }
         /// <summary>
         /// Generates a list of the ingredients in a MMC
@@ -28,15 +28,15 @@ namespace DinoDiner.Menu.Sides
                 size = value;
                 switch (size)
                 {
-                    case Size.Large:
+                    case this.Size.Large:
                         Calories = 480;
                         Price = 1.95;
                         break;
-                    case Size.Medium:
+                    case this.Size.Medium:
                         Calories = 365;
                         Price = 1.45;
                         break;
-                    case Size.Small:
+                    case this.Size.Small:
                         Calories = 222;
                         Price = 0.99;
                         break;
