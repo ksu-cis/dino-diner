@@ -57,7 +57,7 @@ namespace MenuTest.Sides
         {
             MeteorMacAndCheese mmc = new MeteorMacAndCheese();
             mmc.Size = Size.Medium;
-            Assert.Equal<Size>(Size.Medium, Size.Medium);
+            Assert.Equal<Size>(Size.Medium, mmc.Size);
         }
 
         [Fact]
@@ -81,7 +81,7 @@ namespace MenuTest.Sides
         {
             MeteorMacAndCheese mmc = new MeteorMacAndCheese();
             mmc.Size = Size.Large;
-            Assert.Equal<Size>(Size.Large, Size.Large);
+            Assert.Equal<Size>(Size.Large, mmc.Size);
         }
     }
 }
