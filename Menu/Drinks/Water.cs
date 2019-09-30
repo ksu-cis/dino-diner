@@ -7,12 +7,20 @@ namespace DinoDiner.Menu.Drinks
 
     public class Water : Drink
     {
-
+        /// <summary>
+        /// Creates a new instance of MeteorMacAndCheese as a small side
+        /// </summary>
+        public Water()
+        {
+            size = Size.Small;
+            Calories = 0;
+            Price = 0.10;
+        }
         public bool _lemon = false;
         /// <summary>
         /// Controls the size of he drink in this instance of tea
         /// </summary>
-        protected Size _size = Size.Small;
+        protected Size size;
         /// <summary>
         /// Sets the size of the selected side and updates the Calories and Price accordingly
         /// </summary>
@@ -20,8 +28,8 @@ namespace DinoDiner.Menu.Drinks
         {
             set
             {
-                _size = value;
-                switch (_size)
+                size = value;
+                switch (size)
                 {
                     case Size.Large:
                         Calories = 0;
@@ -37,7 +45,7 @@ namespace DinoDiner.Menu.Drinks
                         break;
                 }
             }
-            get { return _size; }
+            get { return size; }
         }
         /// <summary>
         /// Returns the ingredients that comprise the beverage

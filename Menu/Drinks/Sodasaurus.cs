@@ -14,6 +14,15 @@ namespace DinoDiner.Menu.Drinks
     public class Sodasaurus : Drink
     {
         /// <summary>
+        /// Creates a new instance of MeteorMacAndCheese as a small side
+        /// </summary>
+        public Sodasaurus()
+        {
+            size = Size.Small;
+            Calories = 112;
+            Price = 1.50;
+        }
+        /// <summary>
         /// Returns the ingredients that comprise the beverage
         /// </summary>
         public override List<string> Ingredients { get { return new List<string>() { "Water", "Natural Flavors", "Cane Sugar" }; } }
@@ -21,7 +30,7 @@ namespace DinoDiner.Menu.Drinks
         /// Gets and Set the natural flavour of the drink
         /// </summary>
         public SodasaurusFlavor Flavor { get; set; } = SodasaurusFlavor.Cola;
-        protected Size _size = Size.Small;
+        protected Size size;
         /// <summary>
         /// Sets the size of the selected side and updates the Calories and Price accordingly
         /// </summary>
@@ -29,8 +38,8 @@ namespace DinoDiner.Menu.Drinks
         {
             set
             {
-                _size = value;
-                switch (_size)
+                size = value;
+                switch (size)
                 {
                     case Size.Large:
                         Calories = 208;
@@ -46,7 +55,7 @@ namespace DinoDiner.Menu.Drinks
                         break;
                 }
             }
-            get { return Size; }
+            get { return size; }
         }
     }
 }
