@@ -25,10 +25,18 @@ namespace DinoDiner.Menu.Entrees
         {
             ingredients.Remove("Ceasar Dressing");
         }
+
+        /// <summary>
+        /// Removes the Lettuce 
+        /// </summary>
         public void HoldLettuce()
         {
             ingredients.Remove("Romaine Lettuce");
         }
+
+        /// <summary>
+        /// Removes the Cheese 
+        /// </summary>
         public void HoldCheese()
         {
             ingredients.Remove("Parmesan Cheese");
