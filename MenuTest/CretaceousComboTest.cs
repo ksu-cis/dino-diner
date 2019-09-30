@@ -6,7 +6,7 @@ using DinoDiner;
 
 namespace MenuTest
 {
-    class CretaceousComboTest
+    public class CretaceousComboTest
     {
         [Fact]
         public ComboMustBeSuppliedAnEntree()

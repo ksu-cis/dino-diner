@@ -4,8 +4,14 @@ using System.Text;
 
 namespace DinoDiner.Menu.Drinks
 {
-   
-    public abstract class Drink : ItemSize
+    public enum Size
+    {
+        Small,
+        Medium,
+        Large
+    }
+
+    public abstract class Drink
     {
         /// <summary>
         /// Gets and sets the price

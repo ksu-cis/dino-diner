@@ -8,11 +8,11 @@ namespace DinoDiner.Menu.Drinks
     public class Water : Drink
     {
 
-        private bool _lemon = false;
+        public bool _lemon = false;
         /// <summary>
         /// Controls the size of he drink in this instance of tea
         /// </summary>
-        protected Size size = this.Size.Small;
+        protected Size _size = Size.Small;
         /// <summary>
         /// Sets the size of the selected side and updates the Calories and Price accordingly
         /// </summary>
@@ -20,24 +20,24 @@ namespace DinoDiner.Menu.Drinks
         {
             set
             {
-                size = value;
-                switch (size)
+                _size = value;
+                switch (_size)
                 {
-                    case this.Size.Large:
+                    case Size.Large:
                         Calories = 0;
                         Price = 0.10;
                         break;
-                    case this.Size.Medium:
+                    case Size.Medium:
                         Calories = 0;
                         Price = .10;
                         break;
-                    case this.Size.Small:
+                    case Size.Small:
                         Calories = 0;
                         Price = 0.10;
                         break;
                 }
             }
-            get { return size; }
+            get { return _size; }
         }
         /// <summary>
         /// Returns the ingredients that comprise the beverage

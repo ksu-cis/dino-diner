@@ -11,7 +11,7 @@ namespace DinoDiner.Menu.Sides
         /// </summary>
         public MeteorMacAndCheese()
         {
-            Size = this.Size.Small;
+            Size = Size.Small;
         }
         /// <summary>
         /// Generates a list of the ingredients in a MeteorMacAndCheese
@@ -28,15 +28,15 @@ namespace DinoDiner.Menu.Sides
                 size = value;
                 switch (size)
                 {
-                    case this.Size.Large:
+                    case Size.Large:
                         Calories = 520;
                         Price = 1.95;
                         break;
-                    case this.Size.Medium:
+                    case Size.Medium:
                         Calories = 490;
                         Price = 1.45;
                         break;
-                    case this.Size.Small:
+                    case Size.Small:
                         Calories = 420;
                         Price = 0.99;
                         break;

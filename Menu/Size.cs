@@ -10,11 +10,11 @@ namespace DinoDiner.Menu
         Medium,
         Large
     }
-    public abstract class ItemSize
+    public class ItemSize
     {
         /// <summary>
         /// Sets the size of the item
         /// </summary>
-        public abstract Size size { get; set; }
+        public Size size { get; set; }
     }
 }

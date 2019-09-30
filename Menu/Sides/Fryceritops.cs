@@ -11,13 +11,13 @@ namespace DinoDiner.Menu.Sides
         /// </summary>
         public Fryceritops()
         {
-            Size = this.Size.Small;
+            Size = Size.Small;
         }
-        /// <summary>
+        /// <summary>`
         /// Generates a list of the ingredients in a MMC
         /// </summary>
         public override List<string> Ingredients { get { return new List<string>() { "Potato", "Salt", "Vegetable Oil" }; } }
-        protected Size size;
+        protected Size _size;
         /// <summary>
         /// Sets the size of the selected side and updates the Calories and Price accordingly
         /// </summary>
@@ -25,24 +25,24 @@ namespace DinoDiner.Menu.Sides
         {
             set
             {
-                size = value;
-                switch (size)
+                _size = value;
+                switch (_size)
                 {
-                    case this.Size.Large:
+                    case Size.Large:
                         Calories = 480;
                         Price = 1.95;
                         break;
-                    case this.Size.Medium:
+                    case Size.Medium:
                         Calories = 365;
                         Price = 1.45;
                         break;
-                    case this.Size.Small:
+                    case Size.Small:
                         Calories = 222;
                         Price = 0.99;
                         break;
                 }
             }
-            get { return size; }
+            get { return _size; }
         }
     }
 }

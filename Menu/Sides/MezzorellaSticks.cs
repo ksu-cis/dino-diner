@@ -11,7 +11,7 @@ namespace DinoDiner.Menu.Sides
         /// </summary>
         public MezzorellaSticks()
         {
-            Size = this.Size.Small;
+            Size = Size.Small;
         }
         /// <summary>
         /// Generates a list of the ingredients in a MezzorellaSticks
@@ -28,15 +28,15 @@ namespace DinoDiner.Menu.Sides
                 size = value;
                 switch (size)
                 {
-                    case this.Size.Large:
+                    case Size.Large:
                         Calories = 720;
                         Price = 1.95;
                         break;
-                    case this.Size.Medium:
+                    case Size.Medium:
                         Calories = 610;
                         Price = 1.45;
                         break;
-                    case this.Size.Small:
+                    case Size.Small:
                         Calories = 540;
                         Price = 0.99;
                         break;

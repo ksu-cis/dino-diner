@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DinoDiner.Menu;
 
 namespace DinoDiner.Menu.Drinks
 {
@@ -30,8 +29,8 @@ namespace DinoDiner.Menu.Drinks
         {
             set
             {
-                Size = value;
-                switch (Size)
+                _size = value;
+                switch (_size)
                 {
                     case Size.Large:
                         Calories = 208;

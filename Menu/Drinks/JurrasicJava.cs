@@ -8,13 +8,13 @@ namespace DinoDiner.Menu.Drinks
     {
 
         /// <summary>
-        /// 
+        /// leaves room for cream if true
         /// </summary>
-        private bool _roomForCream = false;
+        public bool _roomForCream = false;
         /// <summary>
-        /// 
+        /// Makes the drink decaf
         /// </summary>
-        private bool _decaf = false;
+        public bool _decaf = false;
         /// <summary>
         /// Returns the ingredients that comprise the beverage
         /// </summary>
@@ -37,38 +37,38 @@ namespace DinoDiner.Menu.Drinks
         {
             set
             {
-                Size = value;
-                switch (Size)
+                _size = value;
+                switch (_size)
                 {
                     case Size.Large:
-                        Calories = 32;
-                        Price = 1.99;
-                        Ice = false;
-                        break;
-                    case Size.Medium:
-                        Calories = 16;
+                        Calories = 8;
                         Price = 1.49;
                         Ice = false;
                         break;
+                    case Size.Medium:
+                        Calories = 4;
+                        Price = .99;
+                        Ice = false;
+                        break;
                     case Size.Small:
-                        Calories = 8;
+                        Calories = 2;
                         Price = 0.99;
                         Ice = false;
                         break;
                 }
             }
-            get { return Size; }
+            get { return _size; }
         }
         /// <summary>
-        /// 
+        /// Makes room for cream
         /// </summary>
-        public void RoomForCream() => _roomForCream = false;
+        public void RoomForCream() => _roomForCream = true;
         /// <summary>
-        /// 
+        /// Makes the drink decalf
         /// </summary>
-        public void MakeDecaf() => _decaf = false;
+        public void MakeDecaf() => _decaf = true;
         /// <summary>
-        /// 
+        /// Adds Ice
         /// </summary>
         public void AddIce() => Ice = true;
     }

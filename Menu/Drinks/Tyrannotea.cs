@@ -9,11 +9,11 @@ namespace DinoDiner.Menu.Drinks
         /// <summary>
         /// Controls if there is lemon in the drink
         /// </summary>
-        bool lemon = false;
+        public bool lemon = false;
         /// <summary>
         /// Controls if there are any added sweeteners
         /// </summary>
-        bool sweetened = false;
+        public bool sweetened = false;
         /// <summary>
         /// Returns the ingredients that comprise the beverage
         /// </summary>
@@ -21,11 +21,11 @@ namespace DinoDiner.Menu.Drinks
         {
             get
             {
-                List<string> ingredients = new List<string>() { "Water", "Tea"};
+                List<string> ingredients = new List<string>() { "Water", "Tea" };
                 if (lemon == true)
                     ingredients.Add("Lemon");
                 if (sweetened == true)
-                    ingredients.Add("Sugar");
+                    ingredients.Add("Cane Sugar");
                 return ingredients;
             }
         }
@@ -62,10 +62,25 @@ namespace DinoDiner.Menu.Drinks
         /// <summary>
         /// Method to add lemon to the drink
         /// </summary>
-        public void AddLemon() =>lemon = true; 
+        public void AddLemon() => lemon = true;
         /// <summary>
-        /// Method to add lemon to the drink
+        /// Method to add sugar to the drink
         /// </summary>
-        public void AddSugar() =>sweetened = true;
+        public void AddSugar()
+        {
+            sweetened = true;
+            switch (_size)
+            {
+                case Size.Large:
+                    Calories = 64;
+                    break;
+                case Size.Medium:
+                    Calories = 32;
+                    break;
+                case Size.Small:
+                    Calories = 16;
+                    break;
+            }
+        }
     }
 }

@@ -11,12 +11,12 @@ namespace DinoDiner.Menu.Sides
         /// </summary>
         public Triceritots()
         {
-            Size = this.Size.Small;
+            Size = Size.Small;
         }
         /// <summary>
         /// Generates a list of the ingredients in a Triceritots
         /// </summary>
-        public override List<string> Ingredients { get { return new List<string>() { "Potato", "Breading", "Vegetable Oil" }; } }
+        public override List<string> Ingredients { get { return new List<string>() { "Potato", "Salt", "Breading","Vegetable Oil" }; } }
         protected Size size;
         /// <summary>
         /// Sets the size of the selected side and updates the Calories and Price accordingly
@@ -28,15 +28,15 @@ namespace DinoDiner.Menu.Sides
                 size = value;
                 switch (size)
                 {
-                    case this.Size.Large:
+                    case Size.Large:
                         Calories = 590;
                         Price = 1.95;
                         break;
-                    case this.Size.Medium:
+                    case Size.Medium:
                         Calories = 410;
                         Price = 1.45;
                         break;
-                    case this.Size.Small:
+                    case Size.Small:
                         Calories = 352;
                         Price = 0.99;
                         break;

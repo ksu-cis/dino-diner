@@ -33,8 +33,8 @@ namespace DinoDiner.Menu
             set
             {
                 _size = value;
-                Drink.Size = value;
-                Side.Size = value;
+                Drink.Size = Drink.Size;
+                Side.Size = Side.Si;
             }
         }
         /// <summary>
