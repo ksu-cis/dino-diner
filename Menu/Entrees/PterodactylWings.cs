@@ -1,26 +1,17 @@
-﻿/*  Brontowurst.cs
+﻿/*  PterodactylWings.cs
 *   Author: Creighton Glasscock
 */
 using System.Collections.Generic;
 
-namespace DinoDiner.Menu.Entrees
+namespace Menu.Entrees
 {
-    public class PterodactylWings
+    public class PterodactylWings : Entree
     {
-        ///<Summary>
-        /// Price of this entree.
-        ///</Summary>
-        public double Price { get; set; }
-
-        ///<Summary>
-        /// Number of calories in this entree.
-        ///</Summary>
-        public uint Calories { get; set; }
 
         ///<Summary>
         /// Ingredients in this entree.
         ///</Summary>
-        public List<string> Ingredients
+        public override List<string> Ingredients
         {
             get
             {

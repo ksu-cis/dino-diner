@@ -1,11 +1,11 @@
-﻿/*  Brontowurst.cs
+﻿/*  SteakosaurusBurger.cs
 *   Author: Creighton Glasscock
 */
 using System.Collections.Generic;
 
-namespace DinoDiner.Menu.Entrees
+namespace Menu.Entrees
 {
-    public class SteakosaurusBurger
+    public class SteakosaurusBurger : Entree
     {
         ///<Summary>
         /// Whether this ingredient is in this entree.
@@ -25,19 +25,9 @@ namespace DinoDiner.Menu.Entrees
         private bool mustard = true;
 
         ///<Summary>
-        /// Price of this entree.
-        ///</Summary>
-        public double Price { get; set; }
-
-        ///<Summary>
-        /// Number of calories in this entree.
-        ///</Summary>
-        public uint Calories { get; set; }
-
-        ///<Summary>
         /// Ingredients in this entree.
         ///</Summary>
-        public List<string> Ingredients
+        public override List<string> Ingredients
         {
             get
             {

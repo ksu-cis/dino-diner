@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace DinoDiner.Menu.Entrees
 {
-    public class Brontowurst : MenuItem
+    public class Brontowurst : Entree
     {
         ///<Summary>
         /// Whether this ingredient is in this entree.

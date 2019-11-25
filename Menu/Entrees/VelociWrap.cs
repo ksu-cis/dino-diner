@@ -1,11 +1,11 @@
-﻿/*  Brontowurst.cs
+﻿/*  VelociWrap.cs
 *   Author: Creighton Glasscock
 */
 using System.Collections.Generic;
 
-namespace DinoDiner.Menu.Entrees
+namespace Menu.Entrees
 {
-    public class VelociWrap
+    public class VelociWrap : Entree
     {
         ///<Summary>
         /// Whether this ingredient is in this entree.
@@ -21,19 +21,9 @@ namespace DinoDiner.Menu.Entrees
         private bool cheese = true;
 
         ///<Summary>
-        /// Price of this entree.
-        ///</Summary>
-        public double Price { get; set; }
-
-        ///<Summary>
-        /// Number of calories in this entree.
-        ///</Summary>
-        public uint Calories { get; set; }
-
-        ///<Summary>
         /// Ingredients in this entree.
         ///</Summary>
-        public List<string> Ingredients
+        public override List<string> Ingredients
         {
             get
             {

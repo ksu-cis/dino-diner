@@ -1,12 +1,12 @@
-﻿/*  Brontowurst.cs
+﻿/*  DinoNuggets.cs
 *   Author: Creighton Glasscock
 */
 
 using System.Collections.Generic;
 
-namespace DinoDiner.Menu.Entrees
+namespace Menu.Entrees
 {
-    public class DinoNuggets
+    public class DinoNuggets : Entree
     {
         ///<Summary>
         /// Number of this ingredient in this entree.
@@ -14,19 +14,9 @@ namespace DinoDiner.Menu.Entrees
         private int nuggetCount = 6;
 
         ///<Summary>
-        /// Price of this entree.
-        ///</Summary>
-        public double Price { get; set; }
-
-        ///<Summary>
-        /// Number of calories in this entree.
-        ///</Summary>
-        public uint Calories { get; set; }
-
-        ///<Summary>
         /// Ingredients in this entree.
         ///</Summary>
-        public List<string> Ingredients
+        public override List<string> Ingredients
         {
             get
             {

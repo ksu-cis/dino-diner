@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj": {}
+    "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj": {
+    "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj",
+        "projectUniqueName": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj",
         "projectName": "MenuTest",
-        "projectPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj",
-        "packagesPath": "C:\\Users\\creightong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\obj\\",
+        "projectPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj",
+        "packagesPath": "C:\\Users\\hammm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\creightong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hammm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {
-                "projectPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj"
+              "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {
+                "projectPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj"
               }
             }
           }
@@ -52,6 +52,7 @@
               "version": "[15.9.0, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -66,28 +67,34 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {
+    "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
+        "projectUniqueName": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
         "projectName": "Menu",
-        "projectPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
-        "packagesPath": "C:\\Users\\creightong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\creightong\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\obj\\",
+        "projectPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
+        "packagesPath": "C:\\Users\\hammm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\creightong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hammm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -120,10 +127,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

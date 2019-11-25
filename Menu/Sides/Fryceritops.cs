@@ -4,7 +4,16 @@ using System.Text;
 
 namespace Menu.Sides
 {
-    class Fryceritops
+    class Fryceritops : Side
     {
+        public override double Price
+        {
+            get
+            {
+                switch
+            }
+        }
+
     }
 }
+ 
