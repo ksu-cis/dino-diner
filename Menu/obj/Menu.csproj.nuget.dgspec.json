@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {}
+    "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\Menu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {
+    "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\Menu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
+        "projectUniqueName": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\Menu.csproj",
         "projectName": "Menu",
-        "projectPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
-        "packagesPath": "C:\\Users\\hammm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\obj\\",
+        "projectPath": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\Menu.csproj",
+        "packagesPath": "C:\\Users\\Creighton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hammm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Creighton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

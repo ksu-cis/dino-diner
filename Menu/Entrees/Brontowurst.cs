@@ -2,7 +2,6 @@
 *   Author: Creighton Glasscock
 */
 
-using Menu.Entrees;
 using System.Collections.Generic;
 
 namespace DinoDiner.Menu.Entrees

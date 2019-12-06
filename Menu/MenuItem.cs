@@ -1,11 +1,9 @@
 ﻿/*  MenuItem.cs
 *   Author: Creighton Glasscock
 */
-using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace Menu
+namespace DinoDiner.Menu
 {
     public abstract class MenuItem
     {
@@ -20,7 +18,7 @@ namespace Menu
         public virtual uint Calories { get; set; }
 
         ///<Summary>
-        /// Ingredients in this entree.
+        /// Ingredients in this item.
         ///</Summary>
         public abstract List<string> Ingredients { get; }
     }

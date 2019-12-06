@@ -3,7 +3,7 @@
 */
 using System.Collections.Generic;
 
-namespace Menu.Entrees
+namespace DinoDiner.Menu.Entrees
 {
     public class TRexKingBurger : Entree
     {

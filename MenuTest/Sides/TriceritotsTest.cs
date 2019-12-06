@@ -1,5 +1,7 @@
 ﻿using Xunit;
 using DinoDiner.Menu.Sides;
+using DinoDiner.Menu;
+
 
 namespace MenuTest.Sides
 {
@@ -23,7 +25,7 @@ namespace MenuTest.Sides
         public void ShouldHaveCorrectIngedients()
         {
             Triceritots tt = new Triceritots();
-            Assert.Contains<string>("Potato", tt.Ingredients);
+            Assert.Contains<string>("Potatoes", tt.Ingredients);
             Assert.Contains<string>("Salt", tt.Ingredients);
             Assert.Contains<string>("Vegetable Oil", tt.Ingredients);
             Assert.Equal<int>(3, tt.Ingredients.Count);

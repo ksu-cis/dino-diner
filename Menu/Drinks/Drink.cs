@@ -1,22 +1,34 @@
-﻿/*  Side.cs
+﻿/*  Drink.cs
 *   Author: Creighton Glasscock
 */
-namespace DinoDiner.Menu.Sides
+namespace DinoDiner.Menu.Drinks
 {
     public enum Size
     {
         Small,
-        Medium, 
+        Medium,
         Large
     }
 
-    public abstract class Side : MenuItem
+    public abstract class Drink : MenuItem
     {
         /// <summary>
         /// Gets or sets the size
         /// </summary>
         public Size Size { get; set; }
 
+        /// <summary>
+        /// Denotes the presence of ice
+        /// </summary>
+        public virtual bool Ice { get; set; } = true;
+
+        /// <summary>
+        /// Sets Ice to false
+        /// </summary>
+        public void HoldIce()
+        {
+            Ice = false;
+        }
 
         /// <summary>
         /// Prices for each size
@@ -31,7 +43,8 @@ namespace DinoDiner.Menu.Sides
         /// <summary>
         /// Gets the price
         /// </summary>
-        public override double Price {
+        public override double Price
+        {
             get
             {
                 switch (Size)

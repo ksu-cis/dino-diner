@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj": {}
+    "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\MenuTest\\MenuTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj": {
+    "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\MenuTest\\MenuTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj",
+        "projectUniqueName": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\MenuTest\\MenuTest.csproj",
         "projectName": "MenuTest",
-        "projectPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\MenuTest.csproj",
-        "packagesPath": "C:\\Users\\hammm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\MenuTest\\obj\\",
+        "projectPath": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\MenuTest\\MenuTest.csproj",
+        "packagesPath": "C:\\Users\\Creighton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\MenuTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hammm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Creighton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -32,8 +27,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {
-                "projectPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj"
+              "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\Menu.csproj": {
+                "projectPath": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\Menu.csproj"
               }
             }
           }
@@ -80,23 +75,18 @@
         }
       }
     },
-    "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj": {
+    "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\Menu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
+        "projectUniqueName": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\Menu.csproj",
         "projectName": "Menu",
-        "projectPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\Menu.csproj",
-        "packagesPath": "C:\\Users\\hammm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hammm\\Desktop\\Downloads\\dino-diner-master\\dino-diner-master\\Menu\\obj\\",
+        "projectPath": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\Menu.csproj",
+        "packagesPath": "C:\\Users\\Creighton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Creighton\\Desktop\\CIS 400\\dino-diner\\Menu\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\hammm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Creighton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

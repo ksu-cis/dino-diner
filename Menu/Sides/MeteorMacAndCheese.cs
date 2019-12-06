@@ -1,21 +1,19 @@
-﻿/*  Fryceritops.cs
+﻿/*  MeteorMacAndCheese.cs
 *   Author: Creighton Glasscock
 */
 using System.Collections.Generic;
 
 namespace DinoDiner.Menu.Sides
 {
-    public class Fryceritops : Side
+    public class MeteorMacAndCheese : Side
     {
-
-
         /// <summary>
         /// Prices for each size
         /// </summary>
         public override double[] SizePrices
         {
-            get 
-            { 
+            get
+            {
                 return new double[] { .99, 1.45, 1.95 };
             }
         }
@@ -27,7 +25,7 @@ namespace DinoDiner.Menu.Sides
         {
             get
             {
-                return new uint[] { 222, 365, 480 };
+                return new uint[] { 420, 490, 520 };
             }
         }
 
@@ -38,8 +36,8 @@ namespace DinoDiner.Menu.Sides
         {
             get
             {
-                return new List<string>() { 
-                    "Potatoes", "Salt", "Vegetable Oil"
+                return new List<string>() {
+                    "Macaroni Noodles", "Cheese Product", "Pork Sausage"
                 };
             }
         }

@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace Menu.Entrees
+namespace DinoDiner.Menu.Entrees
 {
     public class DinoNuggets : Entree
     {
