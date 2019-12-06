@@ -4,10 +4,19 @@
 
 using System.Collections.Generic;
 
-namespace DinoDiner.Menu.Entrees
+namespace DinoDiner.Menu
 {
     public class DinoNuggets : Entree
     {
+        /// <summary>
+        /// String representation of name of this item
+        /// </summary>
+        /// <returns>Name of this item</returns>
+        public override string ToString()
+        {
+            return "Dino Nuggets";
+        }
+
         ///<Summary>
         /// Number of this ingredient in this entree.
         ///</Summary>

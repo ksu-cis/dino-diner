@@ -5,10 +5,19 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DinoDiner.Menu.Drinks
+namespace DinoDiner.Menu
 {
     public class JurassicJava : Drink
     {
+        /// <summary>
+        /// String representation of name of this item
+        /// </summary>
+        /// <returns>Name of this item</returns>
+        public override string ToString()
+        {
+            return SizeExtension.SizeString(Size) + (Decaf ? " Decaf" : "") + " Jurassic Java";
+        }
+
         /// <summary>
         /// Denotes the presence of ice
         /// </summary>

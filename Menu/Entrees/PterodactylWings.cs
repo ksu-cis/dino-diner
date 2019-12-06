@@ -3,10 +3,18 @@
 */
 using System.Collections.Generic;
 
-namespace DinoDiner.Menu.Entrees
+namespace DinoDiner.Menu
 {
     public class PterodactylWings : Entree
     {
+        /// <summary>
+        /// String representation of name of this item
+        /// </summary>
+        /// <returns>Name of this item</returns>
+        public override string ToString()
+        {
+            return "Pterodactyl Wings";
+        }
 
         ///<Summary>
         /// Ingredients in this entree.

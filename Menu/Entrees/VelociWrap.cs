@@ -3,10 +3,19 @@
 */
 using System.Collections.Generic;
 
-namespace DinoDiner.Menu.Entrees
+namespace DinoDiner.Menu
 {
     public class VelociWrap : Entree
     {
+        /// <summary>
+        /// String representation of name of this item
+        /// </summary>
+        /// <returns>Name of this item</returns>
+        public override string ToString()
+        {
+            return "Veloci-Wrap";
+        }
+
         ///<Summary>
         /// Whether this ingredient is in this entree.
         ///</Summary>

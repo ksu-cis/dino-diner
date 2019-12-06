@@ -1,16 +1,11 @@
 ﻿/*  Drink.cs
 *   Author: Creighton Glasscock
 */
-namespace DinoDiner.Menu.Drinks
-{
-    public enum Size
-    {
-        Small,
-        Medium,
-        Large
-    }
+using System.Collections.Generic;
 
-    public abstract class Drink : MenuItem
+namespace DinoDiner.Menu
+{
+    public abstract class Drink : IMenuItem
     {
         /// <summary>
         /// Gets or sets the size
@@ -43,7 +38,7 @@ namespace DinoDiner.Menu.Drinks
         /// <summary>
         /// Gets the price
         /// </summary>
-        public override double Price
+        public double Price
         {
             get
             {
@@ -60,7 +55,7 @@ namespace DinoDiner.Menu.Drinks
         /// <summary>
         /// Gets the calories
         /// </summary>
-        public override uint Calories
+        public uint Calories
         {
             get
             {
@@ -73,5 +68,10 @@ namespace DinoDiner.Menu.Drinks
                 }
             }
         }
+
+        ///<Summary>
+        /// Ingredients in this item.
+        ///</Summary>
+        public abstract List<string> Ingredients { get; }
     }
 }

@@ -3,10 +3,19 @@
 */
 using System.Collections.Generic;
 
-namespace DinoDiner.Menu.Sides
+namespace DinoDiner.Menu
 {
     public class MeteorMacAndCheese : Side
     {
+        /// <summary>
+        /// String representation of name of this item
+        /// </summary>
+        /// <returns>Name of this item</returns>
+        public override string ToString()
+        {
+            return SizeExtension.SizeString(Size) + " Meteor Mac and Cheese";
+        }
+
         /// <summary>
         /// Prices for each size
         /// </summary>

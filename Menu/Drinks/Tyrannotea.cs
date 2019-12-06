@@ -5,10 +5,19 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DinoDiner.Menu.Drinks
+namespace DinoDiner.Menu
 {
     public class Tyrannotea : Drink
     {
+        /// <summary>
+        /// String representation of name of this item
+        /// </summary>
+        /// <returns>Name of this item</returns>
+        public override string ToString()
+        {
+            return SizeExtension.SizeString(Size) + (Sweet ? " Sweet" : "") + " Tyrannotea";
+        }
+
         /// <summary>
         /// Sweetness
         /// </summary>

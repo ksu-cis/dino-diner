@@ -1,16 +1,11 @@
 ﻿/*  Side.cs
 *   Author: Creighton Glasscock
 */
-namespace DinoDiner.Menu.Sides
-{
-    public enum Size
-    {
-        Small,
-        Medium, 
-        Large
-    }
+using System.Collections.Generic;
 
-    public abstract class Side : MenuItem
+namespace DinoDiner.Menu
+{
+    public abstract class Side : IMenuItem
     {
         /// <summary>
         /// Gets or sets the size
@@ -31,7 +26,7 @@ namespace DinoDiner.Menu.Sides
         /// <summary>
         /// Gets the price
         /// </summary>
-        public override double Price {
+        public double Price {
             get
             {
                 switch (Size)
@@ -47,7 +42,7 @@ namespace DinoDiner.Menu.Sides
         /// <summary>
         /// Gets the calories
         /// </summary>
-        public override uint Calories
+        public uint Calories
         {
             get
             {
@@ -60,5 +55,10 @@ namespace DinoDiner.Menu.Sides
                 }
             }
         }
+
+        ///<Summary>
+        /// Ingredients in this item.
+        ///</Summary>
+        public abstract List<string> Ingredients { get; }
     }
 }

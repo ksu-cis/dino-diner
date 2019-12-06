@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DinoDiner.Menu.Drinks
+namespace DinoDiner.Menu
 {
     public enum SodasaurusFlavor
     {
@@ -19,6 +19,35 @@ namespace DinoDiner.Menu.Drinks
     }
     public class Sodasaurus : Drink
     {
+        /// <summary>
+        /// Converts SodasaurusFlavor enum to string
+        /// </summary>
+        /// <returns>SodasaurusFlavor enum</returns>
+        public static string FlavorString(SodasaurusFlavor f)
+        {
+            switch (f)
+            {
+                case SodasaurusFlavor.Cola: return "Cola";
+                case SodasaurusFlavor.Orange: return "Orange";
+                case SodasaurusFlavor.Vanilla: return "Vanilla";
+                case SodasaurusFlavor.Chocolate: return "Chocolate";
+                case SodasaurusFlavor.RootBeer: return "RootBeer";
+                case SodasaurusFlavor.Cherry: return "Cherry";
+                case SodasaurusFlavor.Lime: return "Lime";
+                default: return "Unknown Flavor";
+            }
+        }
+
+        /// <summary>
+        /// String representation of name of this item
+        /// </summary>
+        /// <returns>Name of this item</returns>
+        public override string ToString()
+        {
+            return SizeExtension.SizeString(Size) + " " +  FlavorString(Flavor) + " Sodasaurus";
+        }
+
+
         /// <summary>
         /// Flavor of item
         /// </summary>
