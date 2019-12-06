@@ -45,21 +45,6 @@ namespace DinoDiner.Menu
         /// </summary>
         public string Toy { get; set; }
 
-        ///<Summary>
-        /// Ingredients in all items.
-        ///</Summary>
-        public List<string> Ingredients
-        {
-            get
-            {
-                List<string> ingredients = new List<string>();
-                ingredients.AddRange(Drink.Ingredients);
-                ingredients.AddRange(Entree.Ingredients);
-                ingredients.AddRange(Side.Ingredients);
-                return ingredients;
-            }
-        }
-
         /// <summary>
         /// Gets the price of all items, with discount
         /// </summary>
@@ -79,6 +64,21 @@ namespace DinoDiner.Menu
             get
             {
                 return Entree.Calories +Side.Calories +Drink.Calories;
+            }
+        }
+
+        ///<Summary>
+        /// Ingredients in all items.
+        ///</Summary>
+        public List<string> Ingredients
+        {
+            get
+            {
+                List<string> ingredients = new List<string>();
+                ingredients.AddRange(Drink.Ingredients);
+                ingredients.AddRange(Entree.Ingredients);
+                ingredients.AddRange(Side.Ingredients);
+                return ingredients;
             }
         }
 
