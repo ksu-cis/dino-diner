@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DinoDiner.Menu;
+using System;
 using Xunit;
-using DinoDiner.Menu;
 
 namespace MenuTest
 {
@@ -23,7 +21,7 @@ namespace MenuTest
         {
 
             DinoNuggets dn = new DinoNuggets();
-            Assert.Equal("Dino-Nuggets", dn.ToString());
+            Assert.Equal("Dino Nuggets", dn.ToString());
         }
 
 
@@ -70,7 +68,7 @@ namespace MenuTest
         [InlineData(Size.Small)]
         [InlineData(Size.Medium)]
         [InlineData(Size.Large)]
-        public void FryceritopsToStringShouldGiveNameForSize(Size size)
+        public void FriceritopsToStringShouldGiveNameForSize(Size size)
         {
             Fryceritops ft = new Fryceritops();
             ft.Size = size;
@@ -194,7 +192,7 @@ namespace MenuTest
 
         [Theory]
         [InlineData(typeof(Brontowurst), "Brontowurst Combo")]
-        [InlineData(typeof(DinoNuggets), "Dino-Nuggets Combo")]
+        [InlineData(typeof(DinoNuggets), "Dino Nuggets Combo")]
         [InlineData(typeof(PrehistoricPBJ), "Prehistoric PB&J Combo")]
         [InlineData(typeof(PterodactylWings), "Pterodactyl Wings Combo")]
         [InlineData(typeof(SteakosaurusBurger), "Steakosaurus Burger Combo")]

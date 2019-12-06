@@ -1,6 +1,6 @@
+using DinoDiner.Menu;
 using System.Collections.Generic;
 using Xunit;
-using DinoDiner.Menu.Entrees;
 
 namespace MenuTest.Entrees
 {
@@ -28,7 +28,7 @@ namespace MenuTest.Entrees
             Assert.Contains<string>("Whole Wheat Bun", ingredients);
             // Should be three patties
             int count = 0;
-            foreach(string ingredient in ingredients)
+            foreach (string ingredient in ingredients)
             {
                 if (ingredient.Equals("Steakburger Pattie")) count++;
             }
